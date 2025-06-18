@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "New-Tab → http://e/",
+  "version": "1.0",
+  "description": "Loads http://e/ every time a new tab is opened.",
+  "chrome_url_overrides": {
+    "newtab": "redirect.html"
+  }
+}
