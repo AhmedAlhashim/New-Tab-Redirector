@@ -1,9 +1,13 @@
 {
-  "manifest_version": 3,
   "name": "New-Tab → http://e/",
-  "version": "1.0",
-  "description": "Loads http://e/ every time a new tab is opened.",
-  "chrome_url_overrides": {
-    "newtab": "redirect.html"
+  "description": "Loads http://e/ whenever a blank/new tab is opened.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+
+  "permissions": ["tabs"],
+  "host_permissions": ["http://e/*"],
+
+  "background": {
+    "service_worker": "background.js"
   }
 }
